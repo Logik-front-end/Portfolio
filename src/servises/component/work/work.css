@@ -1,0 +1,26 @@
+.work img{
+    width: 35%;
+    position: relative;
+    margin: 35px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.work{
+    margin-bottom: 100px;
+
+}
+
+
+@media (max-width: 768px) {
+    .work img {
+        width: 350px;
+        
+      
+    }
+
+    .work{
+        padding: 0px;
+        margin: 0px;
+    
+    }
+}
