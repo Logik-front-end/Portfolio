@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+#root{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+}
+
+body {
+  font-family: "Ubuntu Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5EE84;
+  color: #072AC8;
+}
+
+.App {
+  text-align: center;
+}
+footer{
+  padding-top: 15px;
+  background-color: #F5EE84;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 95%;
+  
+}

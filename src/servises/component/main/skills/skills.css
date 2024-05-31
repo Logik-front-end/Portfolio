@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.parent-skill {
+    width: 200px;
+    height: auto;
+    position: relative; 
+}
+
+.skill {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    box-shadow: 10px 10px 19px #d3d041, -10px -10px 19px #f8ff91;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+}
+
+.progress {
+    width: 97%;
+    height: 97%;
+    border-radius: 100%;
+    background: linear-gradient(280deg, #f0e000, #ffe48d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-number {
+    font-family: 'Poppins', sans-serif;
+    color: #0400ff;
+    font-size: 2rem;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    color: #3700ff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.emoji {
+    font-size: 2rem;
+    position: absolute;
+    animation: fly 3s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fly {
+    0% {
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        top: calc(50% - 200px + (400px * var(--direction-y)));
+        left: calc(50% - 200px + (400px * var(--direction-x)));
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parent-skill {
+        margin-bottom: 20px;
+    }
+}
