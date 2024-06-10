@@ -22,7 +22,7 @@ function Skills() {
   };
 
   return (
-    <div className='skills'>
+    <div id="About"  className='skills'>
       <h1>My Skills</h1>
       <section>
         <div className="parent-skill" onClick={handleSkillClick}>

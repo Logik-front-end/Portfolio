@@ -1,16 +1,11 @@
-* {
-    box-sizing: border-box;
-}
 
-html, body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin-bottom: 50px;
+
     display: flex;
+
 }
 
 .section-block {
@@ -19,7 +14,8 @@ html, body {
 }
 
 .section-info {
-    color: white;
+    color: #3700ff;
+    font-size: 25px;
 }
 
 .section-info h2 {
@@ -43,7 +39,7 @@ html, body {
 }
 
 .form-block {
-    color: rgba(255, 255, 255, 0.9);
+    color: #3700ff;
 }
 
 .form-block .form-label {
