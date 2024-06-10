@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.section-block {
+    flex: 1;
+    margin: 50px 25px;
+}
+
+.section-info {
+    color: white;
+}
+
+.section-info h2 {
+    margin: 0 0 10px 0;
+}
+
+.section-info p {
+    opacity: 0.9;
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    color: #232F31;
+    font-size: 36px;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.social-links a:hover {
+    opacity: 1;
+}
+
+.form-block {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.form-block .form-label {
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-block input[type=text],
+.form-block textarea {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    background: #495558;
+    border: none;
+    margin-bottom: 6px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    text-indent: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.form-block input[type=text]:focus,
+.form-block textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
+}
+
+.form-block textarea {
+    padding-top: 5px;
+    height: 120px;
+}
+
+.form-block input[type=submit] {
+    font-size: 16px;
+    margin-top: 10px;
+    background: #232F31;
+    border: none;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 5px 12px;
+    border-radius: 3px;
+    font-weight: lighter;
+    opacity: 0.9;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.form-block input[type=submit]:focus {
+    outline: none;
+    opacity: 1;
+}
+
+.form-block input[type=submit]:hover {
+    opacity: 1;
+}
+
+@media (max-width: 920px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .section-block:nth-child(1) {
+        margin-bottom: 0;
+    }
+}

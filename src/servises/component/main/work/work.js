@@ -1,6 +1,6 @@
 import React from "react";
 import './work.css'
-import img1 from "../../img/site.png"
+import img1 from "../../../img/site.png"
 
 function work() {
   return (
