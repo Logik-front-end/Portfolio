@@ -12,7 +12,7 @@ function Connect() {
         e.preventDefault();
         setSubmitting(true);
         try {
-            const response = await axios.post('/submit-form', {
+            const response = await axios.post('http://localhost:3001/submit-form', {
                 name,
                 email,
                 message,
@@ -22,11 +22,12 @@ function Connect() {
                 setName('');
                 setEmail('');
                 setMessage('');
-                sendTelegramMessage(name, email, message); // Отправляем уведомление в Telegram
+                sendTelegramMessage(name, email, message); // Відправка у Telegram
             }
         } catch (error) {
-            alert('Failed to send message');
+            alert('Failed to send message. See console for details.');
             console.error('Error:', error);
+            console.error('Error Response:', error.response);
         } finally {
             setSubmitting(false);
         }
@@ -35,10 +36,11 @@ function Connect() {
     const sendTelegramMessage = async (name, email, message) => {
         try {
             await axios.post(
-                '/submit-form',
+                'http://localhost:3001/send-telegram-message',
                 {
-                    chat_id: '@Portfolio1234bot',
-                    text: `New message from ${name} (${email}): ${message}`,
+                    name,
+                    email,
+                    message,
                 }
             );
         } catch (error) {
