@@ -22,7 +22,7 @@ function Connect() {
                 setName('');
                 setEmail('');
                 setMessage('');
-                sendTelegramMessage(name, email, message); // Відправка у Telegram
+                sendTelegramMessage(name, email, message);
             }
         } catch (error) {
             alert('Failed to send message. See console for details.');
