@@ -21,7 +21,10 @@
     align-items: flex-start;
 
 }
-
+.mobile{
+    display: none;
+    font-size: 24px;
+}
 .draggable-word {
     margin: 0 0.2em;
     padding: 0.2em;
@@ -33,12 +36,18 @@
     position: absolute;
 }
 @media (max-width: 768px) {
-
+    .mobile{
+        display: block;
+    }
+    .about h3{
+        display: none;
+    }
     .draggable-word{
         border: 1px solid rgba(0, 0, 0, 0);
         font-size: 20px;
         margin: 0px;
         padding: 0px;
+        display: none;
     }
     }
 
